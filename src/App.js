@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from "./Components/Navbar";
+import Home from "./Pages/home/home";
 
 function App() {
 	return (
 		<React.Fragment>
-			<Navbar/>
+			<Home/>
 		</React.Fragment>
 	);
 }
