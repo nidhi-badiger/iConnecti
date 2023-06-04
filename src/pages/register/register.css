@@ -6,6 +6,7 @@
  display: flex;
 justify-content: center;
 background-color: aliceblue;
+display: inline-block;
 }
 
 .loginWrapper{
@@ -13,23 +14,36 @@ background-color: aliceblue;
     height: 70%;
     /* background-color: yellow; */
     display: flex;
+   padding-top: 5px;
+   display: inline-block;
+
     
     
 }
 
-.loginLeft , .loginRight{
-    flex: 1;
-    /* align-items: center; */
+form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
+  
 }
+
+.loginRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 23%;
+} 
 
 .loginTitle{
    font-size: 50px;
    font-weight: 800;
    color: #1775ee;
    margin-bottom: 10px; 
+   margin-left: 19%;
 }
 
 .loginDes{
@@ -40,12 +54,18 @@ background-color: aliceblue;
     -moz-box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
     box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
     border-radius: 10px;
+    
+    display: inline-block;
+    width: 100%;
 }
 .loginStart{
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
+    background-color: red;
+    display: inline-block;
+    
    
 }
 
@@ -91,7 +111,8 @@ background-color: aliceblue;
 }
 
 .loginRegisterButton{
-    height: 50px;
+    width: 40%;
+    height: 60px;
     margin-bottom: 5px;
     border-radius: 5px;
     background-color: #42b72a;
@@ -101,4 +122,5 @@ background-color: aliceblue;
     font-weight: 500;
     cursor: pointer;
     margin: 10px;
+    margin-left: 29%;
 }
