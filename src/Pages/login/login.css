@@ -1,0 +1,91 @@
+.login{
+    width : 100vw;
+    height: 100vh;
+    
+ align-items: center;
+ display: flex;
+justify-content: center;
+/* background-color: aliceblue; */
+}
+
+.loginWrapper{
+    width: 50%;
+    height: 90%;
+    
+    align-items: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    -webkit-box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
+    box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
+    border-radius: 10px;
+}
+.loginStart{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.loginEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  
+} 
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content:center;
+   
+}
+.registerButtons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    /* justify-content: space-between; */
+   
+}
+
+
+
+.SignInButton{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #224be0;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+       
+}
+
+.passwordForgot{
+    text-align: center;
+    color: #1775ee;
+    margin: 10px;
+}
+
+.RegisterButton{
+    width: 150px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #1775ee;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+  

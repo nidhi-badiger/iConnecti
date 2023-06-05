@@ -1,0 +1,12 @@
+.main{
+    border: 1px;
+   
+    text-align: center;
+    margin-top:30px ;
+  }
+  .flex_row{
+    height: 50px;
+    justify-content: center;
+    display: flex;
+  }
+  
