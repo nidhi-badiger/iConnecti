@@ -5,7 +5,7 @@
  align-items: center;
  display: flex;
 justify-content: center;
-background-color: aliceblue;
+background-color: white;
 display: inline-block;
 }
 
@@ -16,6 +16,7 @@ display: inline-block;
     display: flex;
    padding-top: 5px;
    display: inline-block;
+   /* background-color: aliceblue; */
 
     
     
@@ -25,7 +26,9 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    /* background-color: aliceblue; */
+  
+    
   
 }
 
@@ -36,6 +39,9 @@ form{
     justify-content: center;
     margin-top: 60px;
     margin-left: 23%;
+    background-color: aliceblue;
+    border-radius: 5px;
+
 } 
 
 .loginTitle{
@@ -115,7 +121,7 @@ form{
     height: 60px;
     margin-bottom: 5px;
     border-radius: 5px;
-    background-color: #42b72a;
+    background-color: #224be0;;
     border: none;
     font-size: 20px;
     color: white;

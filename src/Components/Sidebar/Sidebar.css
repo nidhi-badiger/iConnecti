@@ -1,0 +1,31 @@
+.sidebar{
+    flex :10;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    
+}
+
+.sidebarWrapper{
+    padding: 20px;
+    
+}
+
+.listItem{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.listItemButton{
+    width: 150px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+}

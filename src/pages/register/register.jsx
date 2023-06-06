@@ -91,7 +91,7 @@ console.log(values);
         <div className='loginRight'>
 
             {/* <div className='loginStart'> */}
-            <form >
+         <form >
             <h3 className='loginTitle'>Company Registration Form</h3>
 
         {
