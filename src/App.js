@@ -1,11 +1,13 @@
 import React from 'react';
-import Home from "./Pages/home/home";
+
+import Activation from './Pages/Activation/Activation';
 
 function App() {
 	return (
-		<React.Fragment>
-			<Home/>
-		</React.Fragment>
+		<div>
+			<Activation/>
+			
+		</div>
 	);
 }
 

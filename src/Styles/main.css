@@ -8,13 +8,15 @@
 }
 
 :root {
-	--mainColor: #224be0;
+	--mainColor: #224be0;;
 	--mainColorLight: #5767aa;
 	--secondaryColor: #ddea4d;
 	--textColor: #eee;
 }
 
 header {
+	position: sticky;
+	top: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

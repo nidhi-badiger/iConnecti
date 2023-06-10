@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <div className='login'>
     <div className='loginWrapper'>
-
+    <div className='loginRight'>
             <div className='loginStart'>
             <form onSubmit={handleSubmit} >
             
@@ -66,12 +66,12 @@ const Login = () => {
             
             </form>
             </div>
-            
+          </div>  
             <p>Not yet Registered? Register as</p>
             <div className='registerButtons'>
-            <button className='RegisterButton'>Register as Company SPOC</button>
-            <button className='RegisterButton'>Register as College SPOC</button>
-            <button className='RegisterButton'>Register as Student</button>
+            <button className='RegisterButton'>Company SPOC</button>
+            <button className='RegisterButton'>College SPOC</button>
+            <button className='RegisterButton'>Student</button>
             </div>
 
         </div>

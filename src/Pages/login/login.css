@@ -1,7 +1,7 @@
 .login{
     width : 100vw;
     height: 100vh;
-    
+    display: inline-block;
  align-items: center;
  display: flex;
 justify-content: center;
@@ -10,8 +10,8 @@ justify-content: center;
 
 .loginWrapper{
     width: 50%;
-    height: 90%;
-    
+    height: 80%;
+    display: inline-block;
     align-items: center;
     background-color: aliceblue;
     display: flex;
@@ -28,6 +28,7 @@ justify-content: center;
     padding: 20px;
     justify-content: space-between;
     margin-top: 50px;
+   
 }
 
 .loginEnd{
@@ -35,7 +36,8 @@ justify-content: center;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-  
+    margin-left: 10px;
+    
 } 
 form{
     display: flex;
@@ -49,14 +51,14 @@ form{
     flex-direction: row;
     padding: 10px;
     /* justify-content: space-between; */
-   
+    display: inline-block;
 }
 
 
 
 .SignInButton{
     width: 100px;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     background-color: #224be0;
     border: none;
@@ -75,17 +77,20 @@ form{
 
 .RegisterButton{
     width: 150px;
-    height: 60px;
-    margin-bottom: 5px;
+    height: 45px;
+    padding: auto;
+    margin-bottom: 15px;
     border-radius: 5px;
-    background-color: #1775ee;
+    background-color: #224be0;;
     border: none;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
     margin: 10px;
     
 }
 
-  
+FormInput{
+    background-color: white;
+}
