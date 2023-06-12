@@ -4,10 +4,12 @@
     overflow-y: scroll;
     width: 10px;
     
+    
 }
 
 .sidebarWrapper{
     padding: 20px;
+    margin-top: 55px;
     
 }
 
@@ -29,4 +31,6 @@
     border-radius: 3px;
     border: none;
     font-weight: 500;
+    background-color: #3da65c;
+    color: white;
 }

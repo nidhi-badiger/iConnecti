@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileActivate from '../profileActivate/profileActivate';
-
+import './activation.css'
 import Navbar from '../../Components/Navbar';
 
 function Activation() {

@@ -4,6 +4,7 @@ import "./profileActivate.css"
 
 function ProfileActivate(){
     return(
+        
     <div className="activation">
         
         {/* <div className="wrapper"> */}
@@ -78,7 +79,7 @@ function ProfileActivate(){
                 </form>
         </div>
 
-    // </div>
+     
     );
 }  
 

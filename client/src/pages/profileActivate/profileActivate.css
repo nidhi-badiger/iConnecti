@@ -4,9 +4,11 @@
     margin:0;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    
 }
 
 .activation{
+   
     height:100vh;
     /* background-image: 
   url(
@@ -17,6 +19,8 @@ background-repeat: no-repeat;
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-left: 33.333%;
+    background-color: rgb(240, 255, 247);
     
 
 }
@@ -110,22 +114,24 @@ background-repeat: no-repeat;
     display:flex;
     justify-content: flex-end;
     padding:10px;
+   
 }
 
 .btn {
     padding:10px 20px;
-    background-color: #081cf0;
+    background-color: #3da65c;
     font-size:17px;
     border:none;
     border-radius:5px;
-    color:#bcf5e7;
+    color:white;
     cursor:pointer;
+    margin-right: 40%;
  }
 
  /* INPUT*/
 
  label {
-    color:#081cf0;
+    color: rgba(0, 0, 0, 0.801);
     font-size: 17px;
     font-weight: 500;
   }
