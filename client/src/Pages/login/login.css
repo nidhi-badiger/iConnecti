@@ -5,7 +5,7 @@
  align-items: center;
  display: flex;
 justify-content: center;
-/* background-color: aliceblue; */
+background-color: rgb(240, 255, 247);
 }
 
 .loginWrapper{
@@ -13,21 +13,22 @@ justify-content: center;
     height: 80%;
     display: inline-block;
     align-items: center;
-    background-color: aliceblue;
+    background-color: hsl(220, 13%, 95%);
     display: flex;
     flex-direction: column;
+  
     /* justify-content: space-between; */
     -webkit-box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
     -moz-box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
     box-shadow: 5px -6px 18px 2px rgba(0,0,0,0.64);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .loginStart{
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
    
 }
 
@@ -39,11 +40,25 @@ justify-content: center;
     margin-left: 10px;
     
 } 
+
+.header {
+    padding:15px 0;
+    border-bottom:1px solid #cccccc;
+    border-radius: 20px;
+    height: 30%;
+    width: 100%;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(
+        "https://static.vecteezy.com/system/resources/thumbnails/007/077/261/small/concept-of-online-payment-with-credit-card-with-smart-phone-laptop-computer-on-office-desk-on-clean-bright-marble-table-background-top-view-flat-lay-photo.jpg");;
+}
 form{
     display: flex;
     flex-direction: column;
     padding: 10px;
     justify-content:center;
+    
    
 }
 .registerButtons{
@@ -60,7 +75,7 @@ form{
     width: 100px;
     height: 40px;
     border-radius: 5px;
-    background-color: #224be0;
+    background-color: #3da65c;
     border: none;
     font-size: 20px;
     color: white;
@@ -71,7 +86,7 @@ form{
 
 .passwordForgot{
     text-align: center;
-    color: #1775ee;
+    color: #3da65c;
     margin: 10px;
 }
 
@@ -81,7 +96,7 @@ form{
     padding: auto;
     margin-bottom: 15px;
     border-radius: 5px;
-    background-color: #224be0;;
+    background-color: #3da65c;
     border: none;
     font-size: 17px;
     color: white;

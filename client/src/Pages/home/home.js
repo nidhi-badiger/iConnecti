@@ -6,6 +6,7 @@ import Topbar from '../../Components/Topbar';
 import TextSlider from '../../Components/TextSlider/TextSlider';
 
 function Home() {
+	
 	return (
 		<div>
 			<Topbar/>

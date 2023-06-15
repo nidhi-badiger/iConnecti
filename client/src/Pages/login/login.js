@@ -1,9 +1,13 @@
 import React from 'react'
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import "./login.css"
 import FormInput from './FormInput';
 
+import Activation from '../Activation/Activation';
+
 const Login = () => {
+  const navigate=useNavigate();
 
   const [values, setValues] = useState({
     username: "",
@@ -47,7 +51,10 @@ const Login = () => {
   return (
     <div className='login'>
     <div className='loginWrapper'>
-    <div className='loginRight'>
+      <div className='header'>
+          
+      </div>
+    {/* <div className='loginRight'> */}
             <div className='loginStart'>
             <form onSubmit={handleSubmit} >
             
@@ -66,10 +73,10 @@ const Login = () => {
             
             </form>
             </div>
-          </div>  
+            
             <p>Not yet Registered? Register as</p>
             <div className='registerButtons'>
-            <button className='RegisterButton'>Company SPOC</button>
+            <button className='RegisterButton' onClick={() =>navigate(Activation)}>Company SPOC</button>
             <button className='RegisterButton'>College SPOC</button>
             <button className='RegisterButton'>Student</button>
             </div>

@@ -8,16 +8,27 @@
 
 .activation{
     height:100vh;
-    background-image: 
+    /* background-image: 
   url(
-"https://img.freepik.com/free-photo/flat-lay-office-desk-assortment-with-copy-space_23-2148707962.jpg");
-
+"https://img.freepik.com/free-photo/flat-lay-office-desk-assortment-with-copy-space_23-2148707962.jpg"); */
+background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
     display:flex;
     justify-content: center;
     align-items: center;
     
 
 }
+
+/* .activation::before{
+    top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+} */
 
 .signup-form  {
     flex:1;
@@ -26,7 +37,7 @@
     border-radius: 10px;
     background-color: #EFF0F1;
     border: 1px solid #999;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom:  auto;
   }
 /* .wrapper{
@@ -42,12 +53,18 @@
 .form-header {
     padding:15px 0;
     border-bottom:1px solid #cccccc;
+    height: 100px;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(
+        "https://static.vecteezy.com/system/resources/thumbnails/007/077/261/small/concept-of-online-payment-with-credit-card-with-smart-phone-laptop-computer-on-office-desk-on-clean-bright-marble-table-background-top-view-flat-lay-photo.jpg");;
 }
 
 .form-header h1 {
     font-size: 28px;
     text-align:center;
-    color:#666;
+    color:#0e0d0d;
 }
 
 /* .left , .right{
@@ -97,18 +114,18 @@
 
 .btn {
     padding:10px 20px;
-    background-color: #081cf0;
+    background-color: #3da65c;
     font-size:17px;
     border:none;
     border-radius:5px;
-    color:#bcf5e7;
+    color:white;
     cursor:pointer;
  }
 
  /* INPUT*/
 
  label {
-    color:#081cf0;
+    color:#3da65c;
     font-size: 17px;
     font-weight: 500;
   }
