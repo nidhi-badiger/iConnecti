@@ -110,4 +110,24 @@ router.post('/signin' , async (req ,res) =>{
   }
 });
 
+router.get('/allUsers' , async (req , res)=>{
+try {
+  const allUsers = await User.find({});
+  res.json(allUsers);
+
+} catch (error) {
+ console.log(error); 
+}
+});
+
+router.post('/deleteUser', async (req , res)=>{
+  const {uid} = req.body;
+  try {
+    await User.deleteOne({_id : uid} );
+     res.status(200).json({message: 'deleted'});
+  } catch (error) {
+    console.log(error);
+  }
+})
+
 module.exports = router;
