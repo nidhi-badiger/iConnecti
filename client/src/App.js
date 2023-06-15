@@ -4,6 +4,7 @@ import  {Routes ,Route} from 'react-router-dom';
 import Register from "./pages/register/register";
 import Activation from './pages/Activation/Activation';
 import MainScreen from './pages/mainScreen/MainScreen';
+import AdminLogin from './pages/Admin/AdminLogin';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 			<Route path='MainScreen/Activation' element={<Activation/>}> </Route>
 			<Route path='/Register' element={<Register/>}> </Route>
 			<Route path='/MainScreen' element={<MainScreen/>}> </Route>
-
+            <Route path='/AdminLogin' element={<AdminLogin/>}> </Route>
 		</Routes >
 		
 		</div>

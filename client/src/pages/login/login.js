@@ -102,6 +102,7 @@ const navigate = useNavigate();
             }}>Company SPOC</button>
             <button className='RegisterButton'>College SPOC</button>
             <button className='RegisterButton'>Student</button>
+           
             </div>
 
         </div>

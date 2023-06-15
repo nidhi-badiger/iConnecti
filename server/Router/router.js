@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const bcrypt = require('bcryptjs');
 require('../DB/conn');
 const User = require('../DB/schema');
 
@@ -45,7 +45,7 @@ router.post('/signup' , async (req ,res )=>{
               return res.status(422).json({error : "Please Fill the fields"});
              }
             const userExist = await User.findOne({username : username});
-            console.log(userExist);
+            
             if(userExist){
                 return res.status(422).json({error : "User already Exists"});
             }
@@ -53,6 +53,7 @@ router.post('/signup' , async (req ,res )=>{
               const user = new User({username , password , confirmPassword , companyname ,companyspocname ,companyspocemail , companyspocphone});
              
               await user.save();
+              console.log(password);
               res.status(201).json({message : "user registered successfully"});
 
             }
@@ -93,11 +94,11 @@ router.post('/signin' , async (req ,res) =>{
   return res.status(422).json({error : "Please Fill the fields"});
  }
     const userExist = await User.findOne({username : username});
-     
+     const isMatch = await bcrypt.compare(password , userExist.password);
      if(!userExist){
       return res.status(422).json({message : "Invalid Credentials"});
     }else{
-      if(password === userExist.password){
+      if(isMatch){
         return res.status(201).json({message : "User signed in"});
         }else{
         return  res.status(422).json({message : "Invalid Credentials"});
