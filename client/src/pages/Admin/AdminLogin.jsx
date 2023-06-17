@@ -38,7 +38,7 @@ const AdminLogin = () => {
          
 
             <input  placeholder='Enter admin Email' onChange={(e)=> setEmail(e.target.value)}/>
-            <input  placeholder='Enter admin Password' onChange={(e)=> setPassword(e.target.value)}/>
+            <input  placeholder='Enter admin Password' type = "password" onChange={(e)=> setPassword(e.target.value)}/>
 
             <div className='loginEnd'>
             <button className='SignInButton'  onClick={handleSubmit}>Login</button>

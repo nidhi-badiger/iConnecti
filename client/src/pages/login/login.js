@@ -12,14 +12,11 @@ const Login = () => {
 
   const inputs = [
     {
-      id: 1,
-      name: "username",
-      type: "text",
-      placeholder: "Username",
-      errorMessage:
-        "Username should be 3-16 characters and shouldn't include any special character!",
-      label: "Username",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      id :1,
+      name: "companyspocemail",
+      type : "email",
+      placeholder : "Company SPOC Email",
+      errorMessage : "Not a valid email",
       required: true,
     },
     {
@@ -37,7 +34,7 @@ const Login = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-     const {username , password} = values;
+     const {companyspocemail , password} = values;
 
      const res = await fetch('/signin' , {
         method : "POST",
@@ -45,7 +42,7 @@ const Login = () => {
             "Content-Type" : "application/json"
         },
         body: JSON.stringify({
-            username,
+          companyspocemail,
             password
         })
 
@@ -100,7 +97,9 @@ const navigate = useNavigate();
             <button className='RegisterButton' onClick={()=>{
               navigate('Register');
             }}>Company SPOC</button>
-            <button className='RegisterButton'>College SPOC</button>
+            <button className='loginRegisterButton' onClick={()=>{
+              navigate('CollegeRegister');
+            }}>College SPOC</button>
             <button className='RegisterButton'>Student</button>
            
             </div>

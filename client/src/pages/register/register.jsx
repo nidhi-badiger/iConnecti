@@ -16,14 +16,22 @@ const Register = () => {
   });
 
   const inputs = [
-    {
+    // {
+    //   id :1,
+    //   name: "username",
+    //   type : "text",
+    //   placeholder : "User Name",
+    //   errorMessage : "Username should be of at least 3 letters and shouldn't include any special character!",
+    //   required: true,
+    //   pattern: "^[A-Za-z0-9]{3-}$",
+    // },
+     {
       id :1,
-      name: "username",
-      type : "text",
-      placeholder : "User Name",
-      errorMessage : "Username should be of at least 3 letters and shouldn't include any special character!",
+      name: "companyspocemail",
+      type : "email",
+      placeholder : "Company SPOC Email",
+      errorMessage : "Not a valid email",
       required: true,
-      pattern: "^[A-Za-z0-9]{3-}$",
     },
     {
       id :2,
@@ -60,16 +68,9 @@ const Register = () => {
       required: true,
       pattern: "^[A-Za-z0-9]{3-}$",
     },
+   
     {
       id :6,
-      name: "companyspocemail",
-      type : "email",
-      placeholder : "Company SPOC Email",
-      errorMessage : "Not a valid email",
-      required: true,
-    },
-    {
-      id :7,
       name: "companyspocphone",
       type : "text",
       placeholder : "Company SPOC Phone",
@@ -85,15 +86,15 @@ const Register = () => {
 
   const postData =async (e)=>{
      e.preventDefault();
-     const {username , password , confirmPassword , companyname ,companyspocname ,companyspocemail , companyspocphone} = values;
-     console.log(username);
+     const {companyspocemail , password , confirmPassword , companyname ,companyspocname , companyspocphone} = values;
+     
      const res = await fetch('/signup', {
         method : "POST",
         headers : {
           "Content-Type" : "application/json"
         },
         body: JSON.stringify({
-          username , password , confirmPassword , companyname ,companyspocname ,companyspocemail , companyspocphone
+           companyspocemail, password , confirmPassword , companyname ,companyspocname  , companyspocphone
         })
      });
 

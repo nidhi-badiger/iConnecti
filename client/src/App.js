@@ -6,6 +6,7 @@ import Activation from './pages/Activation/Activation';
 import MainScreen from './pages/mainScreen/MainScreen';
 import AdminLogin from './pages/Admin/AdminLogin';
 import AdminPage from './pages/Admin/AdminPage';
+import CollegeRegister from './pages/collegeRegistration/collegeRegister';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 			<Route path='/MainScreen' element={<MainScreen/>}> </Route>
             <Route path='/AdminLogin' element={<AdminLogin/>}> </Route>
 			<Route path='/AdminLogin/AdminPage' element={<AdminPage/>}> </Route>
+			<Route path='/CollegeRegister' element={<CollegeRegister/>}> </Route>
 		</Routes >
 		
 		</div>
